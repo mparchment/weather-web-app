@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+.Title {
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 40px;
+}
+
+.Title > h1 {
+  -webkit-text-stroke: 3px #000000;
+  text-shadow: 5px 5px 0 #000000;
+
+  font-family: "Bungee", sans-serif;
+  color: #fff;
+  font-size: 2.5rem;
+
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.Floating {
+  animation-name: Floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes Floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 15px); }
+  100%   { transform: translate(0, -0px); }
+}

@@ -1,0 +1,14 @@
+.SunBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.SunBox > div {
+    justify-content: center;
+    text-align: center;
+}
+
+img {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
