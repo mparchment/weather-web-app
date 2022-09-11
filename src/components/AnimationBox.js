@@ -1,10 +1,10 @@
-import '../stylesheets/Animation.css'
-import '../stylesheets/Title.css'
+import '../stylesheets/AnimationBox.css'
 import Lottie from 'react-lottie';
 
-import stormAnimation from '../animations/icons8-storm.json'
-import clearAnimation from '../animations/icons8-sun.json'
-import rainAnimation from '../animations/icons8-rain.json'
+import stormAnimation from '../media/icons8-storm.json'
+import clearAnimation from '../media/icons8-sun.json'
+import rainAnimation from '../media/icons8-rain.json'
+import { useState } from "react";
 
 function AnimationBox({ weather }) {
 
@@ -42,20 +42,23 @@ function AnimationBox({ weather }) {
     };
 
     return (
-        <div className="Animation">
-            <div className="Subtitle">
-                {blurb}
-            </div>
-            <div className="Inner-Animation">
-                <div className="Animation-Title">
-                    {currWeather}
-                </div>
+        <div className="AnimationBox">
+            <h1>{blurb}</h1>
+            <div className="Animation">
+                <div><h2>{currWeather}</h2></div>
                 <div className="Lottie">
-                    <Lottie
-                        options={defaultOptions}
-                        height={200}
-                        width={200}
-                    />
+                    <span className="DesktopLottie">
+                        <Lottie
+                                options={defaultOptions}
+                                style={{ height: "15.625rem", width: "15.625rem" }}
+                        />
+                    </span>
+                    <span className="MobileLottie">
+                        <Lottie
+                                options={defaultOptions}
+                                style={{ height: "7.5rem", width: "7.5rem" }}
+                        />
+                    </span>
                 </div>
             </div>
         </div>

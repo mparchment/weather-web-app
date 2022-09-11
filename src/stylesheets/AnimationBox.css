@@ -1,0 +1,49 @@
+.Inner-Animation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.AnimationBox h1 {
+    margin: .625rem;
+    line-height: 100%;
+}
+
+.Animation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+.Animation h2 {
+    font-size: 4.5rem;
+    margin: 0 4rem 0 0;
+}
+
+@media (max-width: 1366px) {
+    .DesktopLottie {
+        display: none;
+    }
+
+    .AnimationBox h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .AnimationBox h2 {
+        font-size: 1.5rem;
+    }
+
+    .Animation {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 1366px) {
+    .MobileLottie {
+        display: none;
+    }
+}

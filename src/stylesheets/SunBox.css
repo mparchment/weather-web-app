@@ -1,14 +1,53 @@
 .SunBox {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: row;
 }
 
-.SunBox > div {
-    justify-content: center;
+.SunBox h1 {
     text-align: center;
 }
 
-img {
-    padding-top: 10px;
-    padding-bottom: 10px;
+.SunBox .SunInfo {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.SunBox > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SunBox .Subtitle {
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
+    line-height: 100%;
+    font-size: 2rem;
+    margin-right: .625rem;
+}
+
+.SunInfo > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.SunBox h2 {
+    margin: 0;
+}
+
+.SunBox img {
+    margin: 1rem;
+}
+
+@media (max-width: 1366px) {
+    .Subtitle {
+        display: none;
+    }
+
+    .SunInfo h2 {
+        font-size: 1.1rem;
+    }
 }

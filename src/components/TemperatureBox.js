@@ -1,16 +1,16 @@
-import '../stylesheets/Information.css';
+import '../stylesheets/TemperatureBox.css'
 import returnColor from "./returnColor";
-import ThermostatIcon from '@mui/icons-material/Thermostat';
 
 function TemperatureBox() {
 
-    const temp = 77;
+    const current_temperature = 77;
+    const feels_like_temperature = 83;
 
     return (
         <div className="TemperatureBox">
-            <div className="Subtitle">Temperature</div>
-            <div style={{ color: `${returnColor(temp)}` }} className="Temperature">77°</div>
-            <div>Feels like: 79°</div>
+            <h1>Temperature</h1>
+            <p style={{ color: `${returnColor(current_temperature)}` }} className="Temperature">{current_temperature}°</p>
+            <p>Feels like: <span style={{ color: `${returnColor(feels_like_temperature)}` }}>{feels_like_temperature}°</span></p>
         </div>
     );
 }

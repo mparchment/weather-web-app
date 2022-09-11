@@ -1,4 +1,5 @@
-import WindPNG from '../animations/icons8-wind-64.png'
+import WindPNG from '../media/icons8-wind-512.png'
+import '../stylesheets/WindBox.css'
 
 function WindBox() {
 
@@ -6,8 +7,11 @@ function WindBox() {
 
     return (
         <div className="WindBox">
-            <div className="Subtitle">Wind</div>
-            <div><img style={{ transform: windRotate }} src={WindPNG} alt=''/></div>
+            <h1>Wind</h1>
+            <div className="Image">
+                <img style={{ transform: windRotate }} src={WindPNG} alt=''/>
+            </div>
+            <p>4 MPH</p>
         </div>
     );
 }

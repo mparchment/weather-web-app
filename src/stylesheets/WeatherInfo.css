@@ -1,0 +1,42 @@
+.WeatherInfo {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 1.25rem;
+    padding: 20px;
+    height: 85%;
+}
+
+.TemperatureBox { grid-area: 1 / 1 / 3 / 2; }
+.SunBox { grid-area: 1 / 2 / 3 / 5; }
+.ForecastBox { grid-area: 1 / 5 / 7 / 7; }
+.WindBox { grid-area: 1 / 7 / 3 / 8; }
+.RainBox { grid-area: 3 / 7 / 5 / 8; }
+.HumidityBox { grid-area: 5 / 7 / 7 / 8; }
+.AnimationBox { grid-area: 3 / 1 / 7 / 5; }
+
+.WeatherInfo > div {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-family: "Bungee", sans-serif;
+    color: #fff;
+}
+
+.WeatherInfo > div:not(.ForecastBox) {
+    padding: 15px;
+}
+
+@media (max-width: 1366px) {
+    .WeatherInfo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .AnimationBox { order: 1; }
+    .TemperatureBox { order: 2; }
+    .SunBox { order: 3; }
+    .ForecastBox { order: 4; }
+    .WindBox { order: 5; }
+    .RainBox { order: 6; }
+    .HumidityBox { order: 7; }
+}

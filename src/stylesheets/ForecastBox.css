@@ -1,0 +1,50 @@
+.ForecastBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.ForecastBox h1 {
+    font-size: 1.5rem;
+    margin: 0 0 0 1rem;
+}
+
+.ForecastBox .Subtitle {
+    padding: 1rem;
+}
+
+.ForecastBox > div:not(.Subtitle){
+    flex-grow: 1;
+}
+
+.ForecastBox > div:last-of-type {
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+}
+
+.Forecast {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem 1rem 1.25rem;
+}
+
+.Forecast > div {
+    display: flex;
+    align-items: center;
+}
+
+.Dark {
+    background: rgba(0,0,0,.25);
+}
+
+.Icon {
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+}
+
+.ForecastTemperature {
+    margin-left: 0.625rem;
+}
+
+.Forecast h3 {
+    margin: 0;
+}
