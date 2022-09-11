@@ -11,7 +11,7 @@
 .SunBox { grid-area: 1 / 2 / 3 / 5; }
 .ForecastBox { grid-area: 1 / 5 / 7 / 7; }
 .WindBox { grid-area: 1 / 7 / 3 / 8; }
-.RainBox { grid-area: 3 / 7 / 5 / 8; }
+.CoverageBox { grid-area: 3 / 7 / 5 / 8; }
 .HumidityBox { grid-area: 5 / 7 / 7 / 8; }
 .AnimationBox { grid-area: 3 / 1 / 7 / 5; }
 
@@ -37,6 +37,6 @@
     .SunBox { order: 3; }
     .ForecastBox { order: 4; }
     .WindBox { order: 5; }
-    .RainBox { order: 6; }
+    .CoverageBox { order: 6; }
     .HumidityBox { order: 7; }
 }

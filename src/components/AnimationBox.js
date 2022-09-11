@@ -4,20 +4,24 @@ import Lottie from 'react-lottie';
 import stormAnimation from '../media/icons8-storm.json'
 import clearAnimation from '../media/icons8-sun.json'
 import rainAnimation from '../media/icons8-rain.json'
-import { useState } from "react";
+import cloudAnimation from '../media/icons8-partly-cloudy-day.json'
 
 function AnimationBox({ weather }) {
 
-    let jsonData = null
-    let blurb = ""
-    let currWeather = ""
-
-    weather = "Clear"
+    let jsonData;
+    let blurb;
+    let currWeather;
 
     if(weather === "Thunderstorm") {
         jsonData = stormAnimation;
         blurb = "Right now, there is a ...";
         currWeather = "Storm"
+    }
+
+    else if(weather === "Clouds") {
+        jsonData = cloudAnimation;
+        blurb = "Right now, it is ...";
+        currWeather = "Cloudy"
     }
 
     else if(weather === "Drizzle" || weather === "Rain") {

@@ -1,9 +1,9 @@
 import WindPNG from '../media/icons8-wind-512.png'
 import '../stylesheets/WindBox.css'
 
-function WindBox() {
+function WindBox({ wind_speed, wind_deg }) {
 
-    const windRotate = "rotate(" + 349 + "deg)"
+    const windRotate = "rotate(" + wind_deg + "deg)"
 
     return (
         <div className="WindBox">
@@ -11,7 +11,7 @@ function WindBox() {
             <div className="Image">
                 <img style={{ transform: windRotate }} src={WindPNG} alt=''/>
             </div>
-            <p>4 MPH</p>
+            <p>{wind_speed} MPH</p>
         </div>
     );
 }

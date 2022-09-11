@@ -5,7 +5,7 @@
 }
 
 .Title > h1 {
-  -webkit-text-stroke: 3px #000000;
+  -webkit-text-stroke: 2px #000000;
   text-shadow: 5px 5px 0 #000000;
 
   font-family: "Bungee", sans-serif;
@@ -13,13 +13,17 @@
   font-size: 2.5rem;
 
   text-transform: uppercase;
-  margin: 0;
-  padding-left: 25rem;
   user-select: none;
 }
 
-.Title-Text:hover, .search:hover {
-  color: rgba(255, 255, 255, .85);
+.DesktopTitle {
+  margin: 0;
+  padding-left: 25rem;
+}
+
+.MobileTitle {
+  line-height: 80%;
+  margin-bottom: 0;
 }
 
 .search {
@@ -36,7 +40,32 @@
   font-family: "Bungee", sans-serif;
   color: #fff;
 
+  text-decoration: underline white;
+  text-underline-offset: 7px;
+
   height: 75px;
+  cursor: alias;
+}
+
+.mobileSearch {
+  -webkit-text-stroke: 3px #000000;
+  text-shadow: 5px 5px 0 #000000;
+
+  text-transform: uppercase;
+  user-select: none;
+
+  display: inline-block;
+  background: transparent;
+  border: 0;
+  font-size: 2.5rem;
+  font-family: "Bungee", sans-serif;
+  color: #fff;
+
+  text-decoration: underline white;
+  text-underline-offset: 7px;
+
+  height: 75px;
+  width: 100vw;
   cursor: alias;
 }
 
@@ -60,6 +89,10 @@ input:focus {
 @media (max-width: 1366px) {
   .DesktopTitle {
     display: None;
+  }
+
+  input {
+    text-align: center;
   }
 }
 
