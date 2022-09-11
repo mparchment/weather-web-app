@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/the-weather/static/css/main.bc570520.css",
+    "main.js": "/the-weather/static/js/main.7e528098.js",
+    "static/media/icons8-wind-512.png": "/the-weather/static/media/icons8-wind-512.20f8308c39d5baaee17f.png",
+    "static/media/icons8-clouds-512.png": "/the-weather/static/media/icons8-clouds-512.d8e0fc5db70c1000c00f.png",
+    "static/media/icons8-hygrometer-512.png": "/the-weather/static/media/icons8-hygrometer-512.bee9e094d01b5909e0f5.png",
+    "index.html": "/the-weather/index.html",
+    "main.bc570520.css.map": "/the-weather/static/css/main.bc570520.css.map",
+    "main.7e528098.js.map": "/the-weather/static/js/main.7e528098.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc570520.css",
+    "static/js/main.7e528098.js"
+  ]
+}
