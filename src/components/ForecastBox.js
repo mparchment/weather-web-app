@@ -1,10 +1,5 @@
 import '../stylesheets/ForecastBox.css'
 
-import RainIcon from "@mui/icons-material/Thunderstorm";
-import SunnyIcon from "@mui/icons-material/WbSunny";
-import CloudIcon from "@mui/icons-material/Cloud";
-import SnowIcon from "@mui/icons-material/AcUnit";
-import returnColor from './returnColor'
 import axios from "axios";
 import {useEffect, useState} from "react";
 import Forecast from "./Forecast";
